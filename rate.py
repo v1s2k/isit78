@@ -79,5 +79,8 @@ rf_bs2scores = cross_val_score(rf, X_bsmote2, y_bsmote2 , cv=7)
 print(f"RF scores:",np.round(rf_bs2scores.mean(),4))
 
 
+print ("Before OverSampling, counts of label '1':",sum (y_train==1))
+print ("Before OverSampling, counts of label '0': ",(sum (y_train==0)))
 
-
+print ("After OverSampling, counts of label '1': ",sum (y_train_sm==1))
+print ("After OverSampling, counts of label '0': ",sum (y_train_sm==0))
