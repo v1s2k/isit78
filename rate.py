@@ -42,7 +42,6 @@ knn = KNeighborsClassifier()
 rf = RandomForestClassifier()
 
 
-
 print('\tМетрики  SMOTE ')
 svm_scores = cross_val_score(svm, X_test_sm, y_test, cv=7)
 print(f"SVM scores:", np.round(svm_scores.mean(),4))
